@@ -436,7 +436,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1347766046}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -510,7 +510,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1347766046}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.75}
   m_AnchorMax: {x: 0.5, y: 0.75}
@@ -646,7 +646,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1347766046}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.6}
   m_AnchorMax: {x: 0.5, y: 0.6}
@@ -781,9 +781,9 @@ RectTransform:
   - {fileID: 218346750}
   - {fileID: 557809153}
   - {fileID: 2078984058}
-  - {fileID: 894679705}
   - {fileID: 1233795766}
   - {fileID: 671694838}
+  - {fileID: 894679705}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1029,6 +1029,7 @@ GameObject:
   - component: {fileID: 2130837655}
   - component: {fileID: 2130837654}
   - component: {fileID: 2130837653}
+  - component: {fileID: 2130837657}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1098,3 +1099,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2130837657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130837652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddaa3f927e291466b80b098e57510f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question: {fileID: 1901239346}
+  score: {fileID: 2078984059}
+  resultScore: {fileID: 1233795767}
+  resultBest: {fileID: 671694839}
+  gameOver: {fileID: 894679706}
