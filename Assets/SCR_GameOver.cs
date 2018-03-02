@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SCR_Gameplay : MonoBehaviour {
+public class SCR_GameOver : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
+		
 	}
 	
 	// Update is called once per frame
@@ -14,11 +15,11 @@ public class SCR_Gameplay : MonoBehaviour {
 		
 	}
 	
-	public void OnRight () {
-		SceneManager.LoadScene ("SCN_GameOver");
+	public void OnPlay () {
+		SceneManager.LoadScene ("SCN_Gameplay");
 	}
 	
-	public void OnWrong () {
-		SceneManager.LoadScene ("SCN_GameOver");
+	public void OnMenu () {
+		SceneManager.LoadScene ("SCN_Menu");
 	}
 }
