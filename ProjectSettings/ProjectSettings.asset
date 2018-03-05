@@ -148,8 +148,9 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.funnyhobos.mathgames
-    Standalone: com.funnyhobos.mathgames
+    Android: com.funnyhobos.quickmath
+    Standalone: com.funnyhobos.quickmath
+    iOS: com.funnyhobos.quickmath
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
