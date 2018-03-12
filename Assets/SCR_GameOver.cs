@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SCR_GameOver : MonoBehaviour {
+	public Text score;
+	public Text best;
 
 	// Use this for initialization
 	void Start () {
-		
+		score.text = "Score: " + SCR_Gameplay.s_score.ToString ();
 	}
 	
 	// Update is called once per frame

@@ -5,14 +5,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SCR_Gameplay : MonoBehaviour {
+	public static int s_score = 0;
+
 	public Text question;
+	public Text score;
 	
 	private int first = 1;
 	private int second = 1;
 	private int result = 2;
-	
+
 	// Use this for initialization
 	void Start () {
+		s_score = 0;
 		question.text = first + " + " + second + "\n= " + result;
 	}
 	
@@ -31,6 +35,8 @@ public class SCR_Gameplay : MonoBehaviour {
 	
 	public void OnRight () {
 		if (first + second == result) {
+			s_score++;
+			score.text = s_score.ToString ();
 			NextQuestion ();
 		}
 		else {
@@ -40,6 +46,8 @@ public class SCR_Gameplay : MonoBehaviour {
 	
 	public void OnWrong () {
 		if (first + second != result) {
+			s_score++;
+			score.text = s_score.ToString ();
 			NextQuestion ();
 		}
 		else {
