@@ -16,6 +16,8 @@ public class SCR_Gameplay : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		SCR_Profile.Load ();
+		
 		s_score = 0;
 		question.text = first + " + " + second + "\n= " + result;
 	}
@@ -23,6 +25,12 @@ public class SCR_Gameplay : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+	
+	private void IncreaseScore () {
+		s_score++;
+		score.text = s_score.ToString ();
+		SCR_Profile.UpdateBestScore (s_score);
 	}
 	
 	private void NextQuestion () {
@@ -35,8 +43,7 @@ public class SCR_Gameplay : MonoBehaviour {
 	
 	public void OnRight () {
 		if (first + second == result) {
-			s_score++;
-			score.text = s_score.ToString ();
+			IncreaseScore ();
 			NextQuestion ();
 		}
 		else {
@@ -46,8 +53,7 @@ public class SCR_Gameplay : MonoBehaviour {
 	
 	public void OnWrong () {
 		if (first + second != result) {
-			s_score++;
-			score.text = s_score.ToString ();
+			IncreaseScore ();
 			NextQuestion ();
 		}
 		else {

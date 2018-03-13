@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SCR_Menu : MonoBehaviour {
 	void Start () {
-		
+		SCR_Profile.Load ();
 	}
 	
 	void Update () {

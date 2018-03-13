@@ -11,6 +11,7 @@ public class SCR_GameOver : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		score.text = "Score: " + SCR_Gameplay.s_score.ToString ();
+		best.text = "Best: " + SCR_Profile.GetBestScore ();
 	}
 	
 	// Update is called once per frame
